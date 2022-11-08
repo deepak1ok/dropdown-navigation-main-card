@@ -15,6 +15,19 @@ body {
     font-family: 'Epilogue', sans-serif;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+ul li a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
 .navbar ul,
 .navbar li {
     display: inline-block;
@@ -38,6 +51,68 @@ header {
 
 .navbar li {
     padding: 1rem;
+}
+
+.arrow {
+    margin-left: 0.5em;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    padding: 0;
+    left: -3em;
+    background-color: hsl(0, 0%, 98%);
+    margin-top: 2.2em;
+    width: 10rem;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 11px 0px #bcbcbc;
+}
+
+.show {
+    display: block;
+}
+
+#dropdown-content2 {
+    left: 0.8em;
+    width: 8em;
+}
+
+.dropdown-content img {
+    margin-right: 0.6em;
+}
+
+.dropdown-content li {
+    padding: 8px 8px 8px 22px;
+}
+
+.btn1 {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.btn1:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.btn2 {
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 8%);
 }
 
 .container {
@@ -68,4 +143,5 @@ p {
     line-height: 1.6rem;
     color: hsl(0, 0%, 41%);
     margin-bottom: 1em;
+    font-size: 18px;
 }
